@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOTOS DE AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<style>
+        /* Base Styles */
+
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+       
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        /* Header & Navigation */
+        header {
+            background: var(--primary);
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+        }
+
+        .logo span {
+            color: var(--secondary);
+        }
+           
+    </style>
+
+
+<!-- HEADER -->
+<header>
+    <div class="container header-content">
+ <!-- NAVEGACIÓN -->
+        <nav>
+            <ul id="navMenu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="fotos.html">Fotos</a></li>
+                <li><a href="informacion.html">Información</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</header>
+
+<!-- HERO 1 -->
+<section class="hero">
+    <div class="container">
+        <h1>Bienvenido al Mundo de las fotos de AI 🌸</h1>
+        <p>
+            Una "foto IA" (Inteligencia Artificial) es una imagen creada, editada o transformada
+            por un software de IA, usando redes neuronales para generar resultados realistas o
+            estilizados a partir de descripciones de texto (prompts) o modificando fotos existentes.
+        </p>
+    </div>
+</section>
+
+<!-- HERO 2 -->
+<section class="hero">
+    <div class="container">
+        <h1>¿Cómo funciona?</h1>
+        <p>
+            <strong>Generación desde texto:</strong> El usuario escribe una descripción y la IA genera la imagen.<br><br>
+            <strong>Edición y transformación:</strong> Se modifica una imagen real (estilo, luz, objetos).<br><br>
+            <strong>Modelos neuronales:</strong> Dos redes trabajan juntas: una crea y otra evalúa la imagen.
+        </p>
+    </div>
+</section>
+
+<!-- HERO 3 -->
+<section class="hero">
+    <div class="container">
+        <h1>Usos comunes</h1>
+        <p>
+            📸 Creación rápida de contenido para redes sociales.<br><br>
+            🎨 Retratos personalizados y fan art.<br><br>
+            ✨ Mejora de fotos: resolución, retoque y eliminación de ruido.
+        </p>
+    </div>
+</section>
+
+<!-- SCRIPT menú móvil -->
+<script>
+    const toggle = document.getElementById('menuToggle');
+    const menu = document.getElementById('navMenu');
+
+    toggle.addEventListener('click', () => {
+        menu.classList.toggle('active');
+    });
+</script>
+
+</body>
+</html>
